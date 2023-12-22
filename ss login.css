@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)), url(login\ sp.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+body .page{
+    width: 400px;
+    color: white;
+    background: rgba(0,0,0,0.5)
+}
+body .page h1{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+body .page .coo{
+    padding-bottom: 10px;
+}
+body .page span{
+    padding-left: 150px;
+}
+body .page button{
+    background-color: yellowgreen;
+}
+body .page button a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+}
+body .page .coa p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+body .page .coa a{
+   color: yellowgreen;
+   font-weight: bolder;
+}

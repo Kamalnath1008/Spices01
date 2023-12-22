@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popping',sans-serif;
+}
+.main{
+    position:fixed;
+    display: inline-flex;
+    justify-content: space-around;
+    height: auto;
+    width: 100%;
+    background:black;
+    z-index: 100;
+}
+.main .logo{
+    position: relative;
+    color: white;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 300; 
+    color: red; 
+    text-shadow:0px 5px 5px orangered ;
+}
+.main .logo img{
+    position: relative;
+    height:75px;
+    width:50px;
+}
+.main .logo span{
+    margin-bottom: -10px;
+}
+.main button{
+    position:relative;
+    height:25px;
+    width:7%;
+    margin-top: 50PX;
+    border-radius: 5px;
+    background-color: greenyellow;
+    color:white;
+    float:right;
+    text-align: center;
+}
+.main button a{
+    color:white;
+    text-decoration: none;
+}
+.main ul{
+    position:relative;
+    height:100%;
+    width:55%;
+    color:white;
+    margin-left: 0px;
+    float:right;
+    padding-top: 50px;
+}
+.main ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+.main ul li a{
+    position: relative;
+    text-decoration: none;
+    display: block;
+    box-sizing: border-box;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    color:white;
+    font-size: 15px;
+    font-weight: 300;  
+    padding: 10px;
+    width: 100%;
+    height: auto;
+}
+.main ul li a:hover{
+    color: yellowgreen;
+}
+.main ul li a:hover::before{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: yellowgreen;
+    left: 0;
+    bottom:0;
+    transition: 0.5s ease-in-out width;
+}
+.main ul li a:hover::before{
+    width: 100%;
+}
+#Home{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)), url(bg\ spice.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    color: white;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 100px;
+}
+#Home h1{
+    font-size: 100px;
+    letter-spacing: 5px;
+    padding-top: 200px;
+}
+#Home form{
+    padding-top: 20px;
+}
+#Home input[type="text"]{
+    height: 30px;
+    width:50%;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+}
+#Home button{
+    /* height: 30px;
+    font-weight: 300;
+    font-size: 25px;
+    
+    border: none;
+    border-radius: 5px;
+    color: white; */
+    background: yellowgreen;
+    color: white;
+}
+
+#About{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)), url(about1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border: auto;
+
+}
+#About img{
+    padding-top: 20px;
+    height: 500px;
+    width: 500px;
+}
+#About h1{
+    font-weight: 300;
+    font-size: 75px;
+}
+#About p{
+    padding-top: 10px;
+    font-weight: 300;
+    font-size: 25px;
+}
+#Product{
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)), url(product\ sp.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Product h1{
+    font-size: 50px;
+    text-decoration: underline;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    text-shadow: 4px 4px 8px yellowgreen;
+    padding-bottom: 100px;
+}
+
+.proimghd{
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-left: 25px;
+    border-spacing: 25px 10px;
+}
+.proimg{
+    background: rgba(0,0,0,0.06);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+    border-radius: 50px;
+    border-left: 1px solid rgba(0,0,0,0.3);
+    border-top: 1px solid rgba(0,0,0,0.3);   
+}
+.proimg:hover{
+    color: white;
+    background: rgba(255,255,255,0.06);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+    border-radius: 50px;
+    border-left: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255,255,255,0.3);
+}
+#Contact{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)), url(contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    height: 100%;
+    
+
+}
+#Contact .g1{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 25px;
+    text-decoration: underline;
+    font-weight: 300;
+    text-align: center;
+    text-shadow: 4px 4px 8px yellowgreen;
+}
+#Contact .g2{
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    background-color:rgba(0,0,0,0.3) ;
+}
+#Contact .g2 h1{ 
+    color: red;
+    font-size: 25px;
+    text-decoration: underline;
+}
+#Contact .g2 p{
+    margin-top: 10px;
+}
+#Contact .g2 form p{
+    margin-top: 10px;
+}
+#Contact .g3{
+    font-size: 25px;
+    margin-top: 30px;
+    background-color:rgba(0,0,0,0.3) ;
+    margin-left: 20px;
+}
+#Contact .g3 p{
+    padding-bottom: 10px;
+}
+#Contact .g4{
+    margin-left: 20px;
+    margin-top: 30px;
+    background-color:rgba(0,0,0,0.3) ;
+}
+#Contact .g5{
+    margin-left: 20px;
+    font-size: 25px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    background-color:rgba(0,0,0,0.3) ;
+}
+#Contact .g5 h4{
+    text-decoration: underline;
+}
+#Contact .g5 .input{
+    padding-top: 10px;
+}
+#Contact .g5 button{
+    background-color: yellowgreen;
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width:480px) {
+    .main{
+        display: ab;
+        
+    }
+    /* #About{
+        min-height: 100vh;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    #About img{
+        width: 100px;
+        height: 100px;
+    }
+    #About p{
+        font-size: 5px;
+    }
+    #About h1{
+        font-size: 15px;
+    }
+     */
+}
+
